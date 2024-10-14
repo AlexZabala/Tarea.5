@@ -1,0 +1,61 @@
+/*Deportes*/
+.padre {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 1fr auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    "nav nav nav"
+    "container container container"
+    "h1 h1 h1"
+    "cont1 cont1 cont1"
+    "h2 h2 h2"
+    "footer footer footer";
+}
+.nav,
+.navbar {
+  grid-area: nav;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.container,
+.row {
+  grid-area: container;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #f0f0f0;
+  margin-bottom: 20px;
+}
+h1 {
+  grid-area: h1;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2px;
+  margin: 10px 0;
+  color: #333;
+  text-align: center;
+}
+.cont1,
+.card-group {
+  grid-area: cont1;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #f0f0f0;
+  margin-bottom: 20px;
+}
+h2 {
+  grid-area: h2;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2px;
+  margin: 15px 0;
+  color: #333;
+  text-align: center;
+}
+.footer,
+.button {
+  grid-area: footer;
+  border-radius: 8px;
+}

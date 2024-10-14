@@ -1,0 +1,44 @@
+/*Materias*/
+.padre {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 50px 1fr auto;
+  grid-gap: 5px;
+  grid-template-areas:
+    "nav nav nav"
+    "container cont1 cont1"
+    "cont2 cont2 cont2"
+    "footer footer footer";
+}
+.nav,
+.navbar {
+  grid-area: nav;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+.container,
+.accordion {
+  grid-area: container;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #f0f0f0;
+}
+.cont1,
+.carousel {
+  grid-area: cont1;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #f0f0f0;
+}
+.cont2, .card{
+  grid-area: cont2;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 2px 3px 4px #f0f0f0;
+  border-bottom: 1px solid #e0e0e0;
+}
